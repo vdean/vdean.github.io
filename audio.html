@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<!-- saved from url=(0061)file:///Users/vdean/Desktop/school/vdean.github.io/audio.html -->
+<html lang="en-US"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <link rel="shortcut icon" href="file:///Users/vdean/Desktop/school/vdean.github.io/images/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="./See, Hear, Explore_ Curiosity via Novel Audio-Visual Association_files/style.css">
+  <title>See, Hear, Explore: Curiosity via Novel Audio-Visual Association</title>
+  <script async="" src="./See, Hear, Explore_ Curiosity via Novel Audio-Visual Association_files/analytics.js"></script><script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+    
+    ga('create', 'UA-83215168-1', 'auto');
+    ga('send', 'pageview');
+  </script>
+</head>
+<body>
+  <div style="width:800px; margin:auto; margin-bottom:100px">
+  <br><h1 style="font-size:50px">See, Hear, Explore: Curiosity via Audio-Visual Association</h1>
+  <table align="center">
+    <tbody><tr>
+      <td align="center" width="200px" style="padding:0px">
+        <center>
+          <span style="font-size:20px"><a href="https://vdean.github.io/">Victoria Dean</a><sup>1</sup></span>
+        </center>
+      </td>
+      <td align="center" width="200px" style="padding:0px">
+        <center>
+          <span style="font-size:20px"><a href="https://shubhtuls.github.io/">Shubham Tulsiani</a><sup>2</sup></span>
+        </center>
+      </td>
+      <td align="center" width="200px" style="padding:0px">
+        <center>
+          <span style="font-size:20px"><a href="http://www.cs.cmu.edu/~abhinavg/">Abhinav Gupta</a><sup>1,2</sup></span>
+        </center>
+      </td>
+    </tr>
+  </tbody></table>
+  <table align="center" width="700px">
+    <tbody><tr>
+      <td align="center" width="200px" padding="0px">
+        <center>
+          <span style="font-size:20px"><sup>1</sup>Carnegie Mellon University</span>
+        </center>
+      </td>
+      <td align="center" width="200px">
+        <center>
+          <span style="font-size:20px"><sup>2</sup>Facebook AI Research</span>
+        </center>
+      </td>
+    </tr>
+  </tbody></table>
+  <table align="center" width="200px">
+    <tbody><tr>
+      <td align="center"><center><span style="font-size:22px"><a href="file:///Users/vdean/Desktop/school/vdean.github.io/resources/audio2020.pdf">[Paper]</a></span></center></td>
+      <td align="center"><center><span style="font-size:22px"><a href="https://github.com/vdean/audio-curiosity">[Code]</a></span></center></td>
+    </tr><tr>
+  </tr></tbody></table>
+  <center><img src="./See, Hear, Explore_ Curiosity via Novel Audio-Visual Association_files/teaser.png" width="600px"><br><br></center>
+  <span style="font-size:18px">Exploration is one of the core challenges in reinforcement learning. A common formulation of curiosity-driven exploration uses the difference between the real future and the future predicted by a learned model. However, predicting the future is an inherently difficult task which can be ill-posed in the face of stochasticity. In this paper, we introduce an alternative form of curiosity that rewards novel associations between different sensory modalities. Our approach exploits multiple modalities to provide a stronger signal for more efficient exploration. Our method is inspired by the fact that, for humans, both sight and sound play a critical role in exploration. We present results on Atari and Habitat (a photorealistic navigation simulator), showing the benefits of using an audio-visual association model for intrinsically guiding learning agents in the absence of external rewards.</span><br><br>
+  <h1>See, Hear, Explore</h1>
+
+  <h1>Videos</h1>
+  <center><h2>Habitat</h2><video width="500pt" controls="">
+    <source src="resources/habitat.mp4" type="video/mp4">
+      Your browser does not support HTML5 video.
+  </video><br><br>
+  <h2>Atari</h2>
+  <table align="center">
+    <tbody><tr>
+      <td align="center" width="400" style="padding:0px; font-size:22px">See, Hear, Explore (ours)</td>
+      <td align="center" width="400" style="padding:0px; font-size:22px">Visual prediction curiosity (baseline)</td>
+    </tr>
+    <tr>
+      <td align="center">
+	<video width="250pt" controls="">
+	  <source src="resources/atari-ours/Asterix-Atari2600.mp4" type="video/mp4">
+	    Your browser does not support HTML5 video.
+	</video>
+      
+      </td><td align="center">
+	<video width="250pt" controls="">
+	  <source src="resources/atari-baseline/Asterix-Atari2600.mp4" type="video/mp4">
+	    Your browser does not support HTML5 video.
+	</video>
+      
+    </td></tr>
+    <tr>
+      <td align="center">
+	<video width="250pt" controls="">
+	  <source src="resources/atari-ours/Breakout-Atari2600.mp4" type="video/mp4">
+	    Your browser does not support HTML5 video.
+	</video>
+      
+      </td><td align="center">
+	<video width="250pt" controls="">
+	  <source src="resources/atari-baseline/Breakout-Atari2600.mp4" type="video/mp4">
+	    Your browser does not support HTML5 video.
+	</video>
+      
+    </td></tr>
+    <tr>
+      <td align="center">
+	<video width="250pt" controls="">
+	  <source src="resources/atari-ours/Gravitar-Atari2600.mp4" type="video/mp4">
+	    Your browser does not support HTML5 video.
+	</video>
+      
+      </td><td align="center">
+	<video width="250pt" controls="">
+	  <source src="resources/atari-baseline/Gravitar-Atari2600.mp4" type="video/mp4">
+	    Your browser does not support HTML5 video.
+	</video>
+      
+    </td></tr>
+    <tr>
+      <td align="center">
+	<video width="250pt" controls="">
+	  <source src="resources/atari-ours/MsPacman-Atari2600.mp4" type="video/mp4">
+	    Your browser does not support HTML5 video.
+	</video>
+      
+      </td><td align="center">
+	<video width="250pt" controls="">
+	  <source src="resources/atari-baseline/MsPacman-Atari2600.mp4" type="video/mp4">
+	    Your browser does not support HTML5 video.
+	</video>
+      
+    </td></tr>
+    <tr>
+      <td align="center">
+	<video width="250pt" controls="">
+	  <source src="resources/atari-ours/SpaceInvaders-Atari2600.mp4" type="video/mp4">
+	    Your browser does not support HTML5 video.
+	</video>
+      </td>
+      <td align="center">
+	<video width="250pt" controls="">
+	  <source src="resources/atari-baseline/SpaceInvaders-Atari2600.mp4" type="video/mp4">
+	    Your browser does not support HTML5 video.
+	</video>
+      </td>
+    </tr>
+  </tbody></table>
+  </center>
+</div>
+
+
+</body></html>
