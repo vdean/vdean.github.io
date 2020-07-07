@@ -56,25 +56,22 @@
       <td align="center"><center><span style="font-size:22px"><a href="https://github.com/vdean/audio-curiosity">[Code]</a></span></center></td>
     </tr><tr>
   </tr></table>
-  <center><img src="resources/teaser.png" width="600px"><br><br></center>
+  <center><iframe width="768" height="432" src="https://www.youtube.com/embed/yLkEHi84SyQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br><br></center>
   <span style="font-size:18px">Exploration is one of the core challenges in reinforcement learning. A common formulation of curiosity-driven exploration uses the difference between the real future and the future predicted by a learned model. However, predicting the future is an inherently difficult task which can be ill-posed in the face of stochasticity. In this paper, we introduce an alternative form of curiosity that rewards novel associations between different sensory modalities. Our approach exploits multiple modalities to provide a stronger signal for more efficient exploration. Our method is inspired by the fact that, for humans, both sight and sound play a critical role in exploration. We present results on Atari and Habitat (a photorealistic navigation simulator), showing the benefits of using an audio-visual association model for intrinsically guiding learning agents in the absence of external rewards.</span><br><br>
   <h1>See, Hear, Explore</h1>
-  Our core idea is that the agent learns a model that captures associations between two modalities. We use this model to reward actions that lead to unseen associations between the modalities. By rewarding such actions, we guide the exploration policy towards discovering new combinations of sight and sound.<br><br>
+  Our core idea is that the agent learns a model that captures associations between two modalities. We use this model to reward actions that lead to unseen associations between the modalities. By rewarding such actions, we guide the exploration policy towards discovering new combinations of sight and sound.<br><br><br>
   <center><img src="resources/discriminator.png" width="800px"><br><br></center>
   To enable the agent to explore, we train a discriminator that tries to determine whether an observed multimodal pair is novel, and we reward the agent in states where the discriminator is surprised by the observed multimodal association. We train the discriminator to predict alignment probability between the modalities, as shown in the diagram above.
   <h1>Results</h1>
   We test our method in two exploration settings (Habitat and Atari) and compare it against Large-Scale Curiosity, Exploration Via Disagreement, and Random Network Distillation.
   <h2 align="center">Habitat</h2>
-  We test our method in a navigation setting using Habitat. In this environment, the agent moves around a photorealistic Replica scene. In all our experiments, the agent is not given any extrinsic reward; we simply want to see how well it can explore without supervision.
+  <img src="resources/habitat.png" width=800px><br><br>
+  We test our method in a navigation setting using a phororealistic Replica scene in the Habitat simulator, shown above. On the left is an example agent view. On the right is the top-down map (not seen by agent). Gray areas are open space, while white areas are obstacles, which make exploration challenging. In all our experiments, the agent is not given any extrinsic reward; we simply want to see how well it can explore without supervision.
   <table><tr>
-      <td align="center"><img src="resources/navigation_nstates.png" width=400px></td>
-      <td align="center"><img src="resources/navigation_nstates.png" width=400px></td>
+      <td align="center"><img src="resources/navigation_nstates.png" width=360px></td>
+      <td align="center"><img src="resources/navigation_counts.png" width=360px></td>
   </tr></table>
-  On Habitat, our method achieves full state coverage about 3 times faster than visual prediction curiosity (left). On the right, state counts are computed from the first 2000 episodes, sorted by frequency and shown on a log scale. Our method has a wider tail of state counts, visiting rare states one to two orders of magnitude more frequently than the baselines. Below is a video of our agent exploring Habitat via audio-visual assocation.<br><br>
-  <center><video width="400pt" controls="">
-    <source src="resources/habitat.mp4" type="video/mp4">
-      Your browser does not support HTML5 video.
-  </video></center><br><br>
+  On Habitat, our method achieves full state coverage about 3 times faster than visual prediction curiosity (left). On the right, state counts are computed from the first 2000 episodes, sorted by frequency and shown on a log scale. Our method has a wider tail of state counts, visiting rare states one to two orders of magnitude more frequently than the baselines.
   <h2 align="center">Atari</h2>
   Similar to prior work, we demonstrate the effectiveness of our approach on 12 Atari enviroments.<br><br>
   <img src="resources/atari_plots.png" width=800px><br><br>
