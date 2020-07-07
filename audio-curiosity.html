@@ -56,7 +56,7 @@
       <td align="center"><center><span style="font-size:22px"><a href="https://github.com/vdean/audio-curiosity">[Code]</a></span></center></td>
     </tr><tr>
   </tr></table>
-  <center><iframe width="768" height="432" src="https://www.youtube.com/embed/yLkEHi84SyQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br><br></center>
+  <center><iframe width="768" height="432" src="https://www.youtube.com/embed/DMiW5hwsoeo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br><br></center>
   <span style="font-size:18px">Exploration is one of the core challenges in reinforcement learning. A common formulation of curiosity-driven exploration uses the difference between the real future and the future predicted by a learned model. However, predicting the future is an inherently difficult task which can be ill-posed in the face of stochasticity. In this paper, we introduce an alternative form of curiosity that rewards novel associations between different sensory modalities. Our approach exploits multiple modalities to provide a stronger signal for more efficient exploration. Our method is inspired by the fact that, for humans, both sight and sound play a critical role in exploration. We present results on Atari and Habitat (a photorealistic navigation simulator), showing the benefits of using an audio-visual association model for intrinsically guiding learning agents in the absence of external rewards.</span><br><br>
   <h1>See, Hear, Explore</h1>
   Our core idea is that the agent learns a model that captures associations between two modalities. We use this model to reward actions that lead to unseen associations between the modalities. By rewarding such actions, we guide the exploration policy towards discovering new combinations of sight and sound.<br><br><br>
@@ -76,82 +76,6 @@
   Similar to prior work, we demonstrate the effectiveness of our approach on 12 Atari enviroments.<br><br>
   <img src="resources/atari_plots.png" width=800px><br><br>
   Above are Atari training curves showing average extrinsic reward (never seen by the agent) throughout training for our method, visual prediction, and exploration via disagreement. Our method outperforms the baselines in 8 of 12 environments, supporting our hypothesis that audio-visual association is a useful signal for accelerating exploration.<br><br>
-  <table align="center">
-    <tr>
-      <td align="center" width="400" style="padding:0px; font-size:22px">See, Hear, Explore (ours)</td>
-      <td align="center" width="400" style="padding:0px; font-size:22px">Visual prediction curiosity (baseline)</td>
-    </tr>
-    <tr>
-      <td align="center">
-	<video width="250pt" controls="">
-	  <source src="resources/atari-ours/Asterix-Atari2600.mp4" type="video/mp4">
-	    Your browser does not support HTML5 video.
-	</video>
-      
-      </td><td align="center">
-	<video width="250pt" controls="">
-	  <source src="resources/atari-baseline/Asterix-Atari2600.mp4" type="video/mp4">
-	    Your browser does not support HTML5 video.
-	</video>
-      
-    </td></tr>
-    <tr>
-      <td align="center">
-	<video width="250pt" controls="">
-	  <source src="resources/atari-ours/Breakout-Atari2600.mp4" type="video/mp4">
-	    Your browser does not support HTML5 video.
-	</video>
-      
-      </td><td align="center">
-	<video width="250pt" controls="">
-	  <source src="resources/atari-baseline/Breakout-Atari2600.mp4" type="video/mp4">
-	    Your browser does not support HTML5 video.
-	</video>
-      
-    </td></tr>
-    <tr>
-      <td align="center">
-	<video width="250pt" controls="">
-	  <source src="resources/atari-ours/Gravitar-Atari2600.mp4" type="video/mp4">
-	    Your browser does not support HTML5 video.
-	</video>
-      
-      </td><td align="center">
-	<video width="250pt" controls="">
-	  <source src="resources/atari-baseline/Gravitar-Atari2600.mp4" type="video/mp4">
-	    Your browser does not support HTML5 video.
-	</video>
-      
-    </td></tr>
-    <tr>
-      <td align="center">
-	<video width="250pt" controls="">
-	  <source src="resources/atari-ours/MsPacman-Atari2600.mp4" type="video/mp4">
-	    Your browser does not support HTML5 video.
-	</video>
-      
-      </td><td align="center">
-	<video width="250pt" controls="">
-	  <source src="resources/atari-baseline/MsPacman-Atari2600.mp4" type="video/mp4">
-	    Your browser does not support HTML5 video.
-	</video>
-      
-    </td></tr>
-    <tr>
-      <td align="center">
-	<video width="250pt" controls="">
-	  <source src="resources/atari-ours/SpaceInvaders-Atari2600.mp4" type="video/mp4">
-	    Your browser does not support HTML5 video.
-	</video>
-      </td>
-      <td align="center">
-	<video width="250pt" controls="">
-	  <source src="resources/atari-baseline/SpaceInvaders-Atari2600.mp4" type="video/mp4">
-	    Your browser does not support HTML5 video.
-	</video>
-      </td>
-    </tr>
-  </table>
   </center>
 </div>
 
