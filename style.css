@@ -11,11 +11,13 @@
     }
 
     a:link, a:visited {
-    text-decoration: none;
+	text-decoration: none;
+	color: #6279cc;
     }
 
     a:hover, a:active {
-    text-decoration: underline;
+	text-decoration: underline;
+	color: #f5ad42;
     }
 
     .image {
@@ -44,6 +46,7 @@
     h2 {
     font-size: 1.5rem;
     font-weight: 500;
+    color: #f27a6b;
     }
 
     h3 {
