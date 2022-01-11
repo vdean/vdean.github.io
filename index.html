@@ -21,21 +21,34 @@
       <img src="images/picture.jpg" width=225 style="border-radius:15px;float:right;">
       <div style="padding-right:265px">
 	<h1>Victoria Dean</h1>
-	<p>I am a PhD student in the <a href="http://ri.cmu.edu">Robotics Institute</a> at Carnegie Mellon University advised by <a href="http://www.cs.cmu.edu/~abhinavg/">Abhinav Gupta</a>. In Fall 2021, I am interning with <a href="https://www.cs.mcgill.ca/~dprecup/">Doina Precup</a> on the DeepMind Montreal team. I work on self-supervision and exploration in reinforcement learning. I am a 2020 recipient of the NSF GRFP.</p>
-	<p>I completed my B.S. in Computer Science and Engineering at MIT, where I did research with <a href="http://web.mit.edu/torralba/www/">Antonio Torralba</a> and <a href="http://cs.columbia.edu/~vondrick/">Carl Vondrick</a>. I have also spent time at <a href="http://waymo.com">Waymo</a>, <a href="http://deepgenomics.com">Deep Genomics</a>, <a href="http://counsyl.com">Counsyl</a>, <a href="http://google.com">Google</a>, and <a href="http://coursera.org">Coursera</a>.</p>
-	<div style="justify-content:space-between;display:flex; padding: 0px 120px 0px 120px"><a href="mailto:vdean@cs.cmu.edu">vdean@cs.cmu.edu</a><a href="CV.pdf">CV</a><a href="https://github.com/vdean">Github</a></div>
+	<p>Hello! I'm a 4th year PhD student in the <a href="http://ri.cmu.edu">Robotics Institute</a> at Carnegie Mellon University advised by <a href="http://www.cs.cmu.edu/~abhinavg/">Abhinav Gupta</a>.  I work on exploration and task transfer in reinforcement learning. I am a 2020 recipient of the NSF GRFP.</p>
+	<p>In Fall 2021, I interned with <a href="https://www.cs.mcgill.ca/~dprecup/">Doina Precup</a> at DeepMind Montreal. I completed my B.S. in Computer Science and Engineering at MIT. I have spent time at <a href="http://waymo.com">Waymo</a>, <a href="http://deepgenomics.com">Deep Genomics</a>, <a href="http://counsyl.com">Counsyl</a>, <a href="http://google.com">Google</a>, and <a href="http://coursera.org">Coursera</a>.</p>
+	<p>I am always looking for students, especially those from underrepresented groups, to collaborate with. If you're interested, please email me.</p>
+	<div style="justify-content:space-between;display:flex; padding: 0px 120px 0px 120px"><a href="mailto:vdean@cs.cmu.edu">vdean@cs.cmu.edu</a><a href="CV.pdf">CV</a><a href="https://github.com/vdean">Github</a><a href="https://twitter.com/vdean314">Twitter</a></div>
       </div>
     </div>
     <div id="news">
       <h2>News</h2>
       <p style="text-align:left">
-	Our paper, <a href="https://openreview.net/forum?id=W_TkB-1eNbs">Robots on Demand: A Democratized Robotics Research Cloud</a>, has been accepted as a Blue Sky Oral at CoRL 2021.<br><br>
-	Our paper, Interesting Object, Curious Agent: Learning Task-Agnostic Exploration, has been accepted as an Oral at NeurIPS 2021.<br><br>
-	I taught <a href="https://vdean.github.io/16-735-ethics-robotics.html">Ethics and Robotics</a> with <a href="http://www.cs.cmu.edu/~illah/">Illah Nourbakhsh</a> in Spring 2021. Our paper on this course, Teaching Ethics by Teaching Ethics Pedagogy, has been accepted to SIGCSE 2022. 
+	I gave a <a href="https://www.youtube.com/watch?v=zYDwnj_ghZM&t=3755s">Blue Sky Oral</a> on our paper, <a href="https://openreview.net/forum?id=W_TkB-1eNbs">Robots on Demand:
+ A Democratized Robotics Research Cloud</a> at CoRL.<br><br>
+	Our paper, <a href="https://proceedings.neurips.cc/paper/2021/file/abe8e03e3ac71c2ec3bfb0de042638d8-Paper.pdf">Interesting Object, Curious Agent: Learning Task-Agnostic Exploration</a>, was an oral at NeurIPS 2021.<br><br>
+	I taught <a href="https://vdean.github.io/16-735-ethics-robotics.html">Ethics and Robotics</a> with <a href="http://www.cs.cmu.edu/~illah/">Illah Nourbakhsh</a> in Spring 2021. Our paper on this course, <a href="16-735/Ethics_and_Robotics_SIGCSE.pdf">Teaching Ethics by Teaching Ethics Pedagogy</a>, will appear at SIGCSE 2022. 
       </p>
     </div>
     <div id="research">
       <h2>Research</h2>
+      <div class="research_item">
+	<img src="images/c-bet.png" class="image">
+	<h3 style="margin-bottom:0px">Interesting Object, Curious Agent: Learning Task-Agnostic Exploration</h3>
+	<p>Simone Parisi*, <b>Victoria Dean*</b>, Deepak Pathak, Abhinav Gupta<br><br>
+	  We propose a paradigm change in the formulation and evaluation of task-agnostic exploration. In this setup, the agent first learns to explore across many environments without any extrinsic goal in a task-agnostic manner. Later on, the agent effectively transfers the learned exploration policy to better explore new environments when solving tasks. In this context, we evaluate several baseline exploration strategies and present a simple yet effective approach to learning task-agnostic exploration policies. <i>CMU and FAIR | NeurIPS 2021.</i> [<a href="https://proceedings.neurips.cc/paper/2021/file/abe8e03e3ac71c2ec3bfb0de042638d8-Paper.pdf">paper</a>, <a href="https://github.com/sparisi/cbet/">code</a>]</p>
+      </div>
+      <div class="research_item">
+        <img src="images/kitchenshift.png" class="image">
+        <h3 style="margin-bottom:0px">KitchenShift: Evaluating Zero-Shot Generalization of Imitation-Based Policy Learning Under Domain Shifts</h3>
+	<p>Eliot Xing, Abhinav Gupta, Sam Powers*, <b>Victoria Dean*</b><br><br>
+	  We propose a testing protocol for evaluating the generalization of policy learning methods. We implement and evaluate KitchenShift, an instance of our testing protocol that applies domain shifts to a realistic kitchen environment. Using KitchenShift, we evaluate imitation and representation learning methods used in current policy learning approaches and find that they are not robust to minor changes in the environment. [<a href="https://openreview.net/forum?id=DdglKo8hBq0">paper</a>]</p><br>
       <div class="research_item">
 	<img src="images/audio-curiosity.png" class="image">
 	<h3 style="margin-bottom:0px">See, Hear, Explore: Curiosity via Audio-Visual Association</h3>
@@ -43,19 +56,19 @@
 	We introduce See, Hear, Explore (SHE): a new curiosity formulation using multimodal self-supervision. SHE rewards actions that generate novel associations between different sensory modalities (pixels and sounds). Our results on Atari and AI Habitat show that SHE allows for more exploration, is more sample-efficient, and is more robust to noise compared to existing curiosity baselines on these environments. <i>CMU and FAIR | NeurIPS 2020.</i> [<a href="resources/see-hear-explore-neurips-2020.pdf">paper</a>, <a href="audio-curiosity.html">website</a>, <a href="https://youtu.be/DMiW5hwsoeo">video</a>]</p>
       </div>
       <div class="research_item">
-	<img src="images/rl.png" class="image">
+	<img src="images/carl.png" class="image">
 	<h3>CaRL: Combining Imitation Learning with Reinforcement Learning</h3>
-	<p>Combined imitation learning with reinforcement learning, which allows us to both learn from observed behavior and generalize beyond it. Applied the idea to a trajectory generation task. <i>Waymo 2018.</i></p>
+	<p>Used reinforcement learning to improve upon imitation learned policies for trajectory generation, with the goal of both learning from observed behavior and generalizing beyond it. Built upon work presented in <a href="https://arxiv.org/abs/1812.03079">this paper</a>. <i>Waymo 2018.</i></p>
       </div>
       <div class="research_item">
 	<img src="images/speed_limit.png" class="image">
 	<h3>Onboard Text Detection</h3>
-	<p>Developed and deployed a new onboard text detection system that allows cars to recognize a set of important words to disambiguate a number of tricky situations. Used an accurate but expensive Google OCR system to train a low-latency onboard model. <i>Waymo 2017.</i></p>
+	<p>Developed and deployed an onboard text detection system that allows cars to recognize a set of important words to disambiguate a number of situations. Used an accurate but expensive Google OCR system to train a low-latency onboard model. <i>Waymo 2017.</i> [<a href="https://patents.google.com/patent/US10699141B2/en">patent</a>]</p>
       </div>
       <div class="research_item">
 	<img src="images/motif.png" class="image">
 	<h3>Deep Learning for Branch Point Selection in RNA Splicing</h3>
-	<p>Built BRANCHR, a state-of-the-art model for predicting branch point selection, a crucial step in RNA splicing. Convolutional neural network built with TensorFlow. <i>Deep Genomics | WiML and MLCB (oral) at NeurIPS 2016. </i> [<a href="MLCB2016_paper.pdf">paper</a>]</p>
+	<p>Built BRANCHR, a state-of-the-art model for predicting branch point selection, a crucial step in RNA splicing. <i>Deep Genomics | WiML and MLCB (oral) at NeurIPS 2016. </i> [<a href="MLCB2016_paper.pdf">paper</a>]</p>
       </div>
       <div class="research_item">
 	<img src="images/prediction_diagram.png" class="image">
